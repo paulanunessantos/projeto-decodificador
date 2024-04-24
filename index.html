@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decodificador de Texto</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <header class="cabecalho">
+        <img class="cabecalho_logo" src="./assets/frame-6.svg" alt="Logo da Alura">   
+    </header>
+    <main class="conteudo">
+        <section class="conteudo_principal">
+            <textarea id="texto_inicial" type="text" placeholder="Digite seu texto"></textarea>
+            <div class="conteudo_principal_alerta">
+                <img class="conteudo_principal_alerta_img" src="./assets/exclamation-circle.svg" alt="Círculo de exclamação">
+                <p class="conteudo_principal_alerta_texto">Apenas letras minúsculas e sem acento.</p>
+            </div>
+            <div class="conteudo_principal_botoes">
+                <button class="conteudo_botoes_crip" onclick="criptografar()" >Criptografar</button>
+                <button class="conteudo_botoes_descrip" onclick="descriptografar()" >Descriptografar</button>
+            </div>
+        </section>
+        <div class="conteudo_criptografado">
+            <img class="conteudo_criptografado_img" src="./assets/sem-mensagem.svg" alt="Mensagem não encontrada">
+            <h3 class="conteudo_criptografado_text1">Nenhuma mensagem encontrada</h3>
+            <p class="conteudo_criptografado_text2">Digite um texto que você deseja criptografar ou descriptografar.</p>
+            <textarea class="texto_final" id="texto_final" type="text"></textarea>
+            <button class="botao_copiar" onclick="copiar()">Copiar</button>
+        </div>  
+    </main>
+    <footer class="rodape">
+        <p>Desenvolvido por Paula Nunes Santos</p>
+    </footer>
+</body>
+</html>
